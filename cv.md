@@ -1,6 +1,6 @@
 # **Kirichenko Anastasiia**
 
-![photo](C:\Users\Fhfghf\Desktop\доки_Кириченко\DSC_0332___.jpg)
+![photo](https://avatars.mds.yandex.net/get-zen-logos/1520972/pub_60b212a4095fdb4281971a81_60b233533204ed6102beea46/xh)
 
 ## Contact information
 ### Phone
@@ -21,6 +21,7 @@ I have a master's degree in biology in genomics and bioinformatics from the Sibe
 ## Language
 
 English - B2
+
 In 2018 I was a participant of work&trawel, where I had language practice at the everyday level.
 
 ## Summary
@@ -35,14 +36,15 @@ I know R, Bash shell and Python a little bit.
 
 #### **This is a Guessing game**
 
-`from random import *
-def is_valid(n):# ПроверОчка на вшивость
+``` python
+from random import *
+def is_valid(n):
     if n.isdigit() and 1<=int(n)<=right:
         return True
     else:
         return False
 
-def game(): # Запуск игры
+def game(): 
     count=0
     while 5<6:
         count+=1
@@ -60,7 +62,7 @@ def game(): # Запуск игры
                 break
     print('Спасибо, что играли в числовую угадайку. Еще увидимся...', 'Количество попыток:'+str(count), sep='\n')
 
-def continue_game(): # Продолжение игры
+def continue_game(): 
     cont=input("Хотите возобновить игру? Введите да или нет...")
     while True:
         if cont!='да' or cont!='нет' or cont!='Да' or cont!='Нет':
@@ -78,6 +80,8 @@ for _in range(10**6):
     game()
     if continue_game()==False:
         break
-    `
+```
 
 ### My projects
+
+My first project is [my cv](https://github.com/NixInstitoris/rsschool-cv).
