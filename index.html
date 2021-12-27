@@ -4,9 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/22238pignose_98784.ico">
 </head>
 <body>
-    <h1>It'll be my cv, but not now</h1>>   
+    <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>
+    <header class=header>
+        <h1>Anastasiia Kirichenko</h1> 
+        <h2>JUNIOR FRONT-END DEVELOPER</h2>
+        <img src="assets/img/3-IZt0gBfx8.jpg" alt="my photo" width="200" height="200">
+    </header>
+    <main>
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul>
+                <li>Location: Saint-Petersburg, Russia</li>
+                <li>anastasiiakirichenko@gmail.com</li>      
+                <li>Github: @NixInstitoris</li>   
+                <li>Discord: ***</li>
+            </ul>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>At university I studied biology and bioinformatics, but during my studies I used only ready-made solutions for my tasks and used publicly available software. But I've always wondered how certain programs work, what's going on behind the scenes, so I started learning python. Studying the programming languages I need for work, I realized, this is what I really want to do, I like to learn something new every day and I like to solve complex problems, so I decided to study new programming languages in order to be able to develop my own soft for the needs of bioinformatics sometime in the future.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>R</li>
+                <li>Bash shell</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+            <h3 class="guessing-game">Guessing game</h3>
+            <code>
+                <pre>
+                    from random import *
+                    def is_valid(n):
+                        if n.isdigit() and 1<=int(n)<=right:
+                            return True
+                        else:
+                            return False
+                    
+                    def game(): 
+                        count=0
+                        while 5<6:
+                            count+=1
+                            n=input('Введите ваше число')
+                            if is_valid(n)==False:
+                                print('А может быть все-таки введем целое число от 1 до', right, '?')
+                            else:
+                                n=int(n)
+                                if n<num:
+                                    print('Ваше число меньше загаданного, попробуйте еще разок')
+                                elif n>num:
+                                    print('Ваше число больше загаданного, попробуйте еще разок')
+                                else:
+                                    print('Вы угадали, поздравляем!')
+                                    break
+                        print('Спасибо, что играли в числовую угадайку. Еще увидимся...', 'Количество попыток:'+str(count), sep='\n')
+                    
+                    def continue_game(): 
+                        cont=input("Хотите возобновить игру? Введите да или нет...")
+                        while True:
+                            if cont!='да' or cont!='нет' or cont!='Да' or cont!='Нет':
+                                cont=input("Хмм.. Непонятно... Так хотите возобновить игру? Введите да или нет...")
+                            if cont=='нет' or cont=='Нет':
+                                print('Жаль... Возвращайтесь:)')
+                                return False
+                            else:
+                                return True
+                    
+                    for _in range(10**6):
+                        print('Добро пожаловать в числовую угадайку')
+                        right=int(input('Укажите максимально возможное рандомное число'))
+                        num=randrange(1, right+1)
+                        game()
+                        if continue_game()==False:
+                            break
+                </pre>
+            </code>
+        </section>        
+        <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <a href="https://stepik.org/cert/1061100">"Python Generation: a course for beginners"(certificate): Stepik.</a>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><a href="https://github.com/NixInstitoris/rsschool-cv/blob/rsschool-cv-html/cv.md">My CV</a></li>
+            </ul>
+        </section>
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>Master's degree in Biology, Siberian Federal University, 2021.
+        </section>
+        <section class="section" id="languages">
+            <h2 class="section-title">languages</h2>
+            <p class="eng">English - B2 (Intermediate).</p>
+        </section>
+    </main>
+    <footer>
+        <span>2021</span>
+        <a href="https://github.com/NixInstitoris">NixInstitoris</a>
+        <a href="https://rs.school/">
+            <img src="assets/img/background.png" alt="RS school" width="200" height="100">
+          </a>
+    </footer>
 </body>
 </html>
