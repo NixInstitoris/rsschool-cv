@@ -1,20 +1,25 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0px;
-  background-color: lightseagreen;
+  margin: 40px 0px;
+  background-color: rgb(215, 252, 228);
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
+}
+.container {
+  display: flexbox
 }
 .header {
   display: flex;
   color:rgb(5, 110, 5);
-  padding: 0px;
+  padding: 10px 30px;
   background-color: palegreen;
+
+  
 }
 .nav {
   display: flex;
@@ -30,6 +35,28 @@ nav a {
 }
 .nav a:hover { background:#5c8db7; }
 
+.caption {
+  float: right;
+  margin: 20px;
+  }
+.photo {
+  float: left;
+  margin: 15px;
+}
+
+main {
+  margin: 10px 30px;
+}
+.section {
+  display: flexbox;
+  flex-grow: 1;
+  border: solid;
+  padding: 20px;
+}
+.section-title {
+  margin: 20px;
+}
+
 
 
 @media all and (max-width: 800px) {
@@ -44,4 +71,9 @@ nav a {
 
 @media all and (max-width: 500px) {
 	.nav { flex-direction: column; }
+  .header {
+    top: 340px;
+  }
 }
+
+
