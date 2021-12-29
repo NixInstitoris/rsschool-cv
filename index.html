@@ -19,7 +19,7 @@
                 <a href="#courses" class="nav-link">Courses</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#education" class="nav-link">Education</a>
-                <a href="#english" class="nav-link">Languages</a>
+                <a href="#languages" class="nav-link">Languages</a>
             </nav>
             <div class="caption">
                 <h1>Anastasiia Kirichenko</h1> 
@@ -56,54 +56,12 @@
             </section>
             <section class="section">
                 <h2 class="section-title">Code</h2>
-                <h3 class="guessing-game">Guessing game</h3>
-                <code class="code">
-                    <pre>
-                        from random import *
-                        def is_valid(n):
-                            if n.isdigit() and 1<=int(n)<=right:
-                                return True
-                            else:
-                                return False
-                        
-                        def game(): 
-                            count=0
-                            while 5<6:
-                                count+=1
-                                n=input('Введите ваше число')
-                                if is_valid(n)==False:
-                                    print('А может быть все-таки введем целое число от 1 до', right, '?')
-                                else:
-                                    n=int(n)
-                                    if n<num:
-                                        print('Ваше число меньше загаданного, попробуйте еще разок')
-                                    elif n>num:
-                                        print('Ваше число больше загаданного, попробуйте еще разок')
-                                    else:
-                                        print('Вы угадали, поздравляем!')
-                                        break
-                            print('Спасибо, что играли в числовую угадайку. Еще увидимся...', 'Количество попыток:'+str(count), sep='\n')
-                        
-                        def continue_game(): 
-                            cont=input("Хотите возобновить игру? Введите да или нет...")
-                            while True:
-                                if cont!='да' or cont!='нет' or cont!='Да' or cont!='Нет':
-                                    cont=input("Хмм.. Непонятно... Так хотите возобновить игру? Введите да или нет...")
-                                if cont=='нет' or cont=='Нет':
-                                    print('Жаль... Возвращайтесь:)')
-                                    return False
-                                else:
-                                    return True
-                        
-                        for _in range(10**6):
-                            print('Добро пожаловать в числовую угадайку')
-                            right=int(input('Укажите максимально возможное рандомное число'))
-                            num=randrange(1, right+1)
-                            game()
-                            if continue_game()==False:
-                                break
-                    </pre>
-                </code>
+                <h3 class="code-name">Checkerboard Matrix</h3>
+                <p class="code"><code>
+> n, m = [int(value) for value in input().split()]<Br>
+> board = [[".*"[(i + j) % 2] for j in range(m)] for i in range(n)]<Br>
+> [print(*line) for line in board]<Br>
+                </code></p>
             </section>   
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
