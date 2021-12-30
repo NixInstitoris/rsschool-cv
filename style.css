@@ -94,18 +94,24 @@ nav a {
   background-color: rgb(255, 255, 255);
   border: 2px dotted rgb(97, 182, 252);
   padding: 15px;
-
-
 }
-
+.project {
+  list-style-image: url(/assets/img/icons8-репозиторий-40.png);
+}
+.skill {
+  list-style-image: url(/assets/img/icons8-развитие-навыков-40.png);
+}
 footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background-color: rgb(50, 150, 50);
+  padding: 15px 0px 0px 0px;
 }
+
 .footer-item {
-  display: inline-block;
+  display: flexbox;
+  flex-direction: row;
   width: 17%;
   text-align: center;
   font-size: 24px;
