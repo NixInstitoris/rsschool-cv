@@ -163,32 +163,33 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 55px;
+  gap: 40px;
 }
 .skill-item {
   background-position: center top;
   background-position: center top;
+  margin-top: 25px;
 }
 .skill-item:nth-child(1) {
-  background-image: url('./assets/svg/camera\ 1.svg');
+  background-image: url('./assets/svg/camera1.svg');
   background-size: 62px 50px;
   background-repeat: no-repeat; 
   transition: 0.3s;
 }
 .skill-item:nth-child(2) {
-  background-image: url('./assets/svg/video\ 1.svg');
+  background-image: url('./assets/svg/video1.svg');
   background-size: 62px 50px;
   background-repeat: no-repeat; 
   transition: 0.3s;
 }
 .skill-item:nth-child(3) {
-  background-image: url('./assets/svg/image\ 1.svg');
+  background-image: url('./assets/svg/image1.svg');
   background-size: 62px 50px;
   background-repeat: no-repeat; 
   transition: 0.3s;
 }
 .skill-item:nth-child(4) {
-  background-image: url('./assets/svg/mic\ 1.svg');
+  background-image: url('./assets/svg/mic1.svg');
   background-size: 62px 50px;
   background-repeat: no-repeat; 
   transition: 0.3s;
@@ -199,8 +200,7 @@ body {
   font-weight: bold;
   line-height: 40px;
   text-align: center;
-  padding: 800px 20px 20px 20px;
-
+  margin-top: 100px; 
 }
 .skill-text {
   width: 280px;
@@ -285,6 +285,7 @@ top: 175px;
   height: 505px;
   margin-top: 60px;
 }
+
 .price-title {
   height: 45px;
   margin-top: 46px;
@@ -328,7 +329,7 @@ top: 175px;
   height: 700px;
   left: 0px;
   top: 4682px;
-  background: url(./assets/img/contacts-bg.jfif);
+  background: url(./assets/img/contacts.jpg);
 }
 .contacts-title {
   position: absolute;
@@ -422,13 +423,16 @@ border-radius: 0px;
   line-height: 50px;
   color: #FFFFFF;
 }
+#icons {
+  gap: 22px;
+}
 .footer-data {
   margin: auto 10px;
 }
 .footer-icons {
   margin: -10px -30px;
 }
-.github-link {
+#github-link {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
