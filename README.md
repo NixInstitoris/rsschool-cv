@@ -1,3 +1,2 @@
 # rsschool-cv
-
-[link on cv](https://github.com/NixInstitoris/rsschool-cv/)
+[portfolio-link](https://rolling-scopes-school.github.io/NixInstitoris/portfolio//)
